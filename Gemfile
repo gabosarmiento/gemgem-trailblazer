@@ -12,12 +12,18 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'foundation-rails'
 gem 'simple_form'
+gem 'thin'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 group :development, :test do
-  gem 'byebug'
+  gem "minitest-rails-capybara"
+  gem "minitest-line"
+end
+
+group :test do
+  gem 'memory_test_fix'
 end
 
 group :development do
